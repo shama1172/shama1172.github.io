@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+section,
+footer {
+    overflow: hidden;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+button:focus,
+a:focus{
+    outline: none;
+    box-shadow: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.align-center{
+    text-align: center;
+}
+.release-dates {
+    background-color: #564b4a;
+    text-align: center;
+    color: white;
+    margin: 0 15%;
+}
+.section-faqs {
+    margin: 0 15%;
+}
+.main-footer {
+    padding: 50px 0;
+    text-align: center;
+}
+.btn-theme {
+    border: 2px solid #080000;
+    background-color: #080000;
+    color: white;
+    border-radius: 0;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+.btn-theme:hover {
+    background-color: #340000;
+}
+.btn-theme-outline {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 0;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+.btn-theme-outline:hover {
+    background-color: white;
+    color: #202020;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #eee;
+}
+
+.panel {
+    padding: 0 18px;
+    font-size: 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (max-width: 500px) {
+}
+@media only screen and (max-width: 900px) {
+}
