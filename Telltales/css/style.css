@@ -1,0 +1,331 @@
+html {
+  background-color: black;
+}
+
+.start {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 6vw;
+  color: white;
+  text-align: center;
+  position: absolute;
+  border: 8px solid white;
+  border-radius: 25px;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.start:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  cursor: pointer;
+  color: black;
+}
+
+.pick {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 6vw;
+  color: yellow;
+  /* border: 8px solid white; */
+  border-radius: 25px;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30%);
+}
+
+.mermaid {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  background-color: black;
+  transform: translateX(-50%);
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.mermaid:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.alien {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-9%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.alien:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.bird {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translateX(-50%) translateY(-5%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.bird:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.space {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  transform: translateX(-50%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.space:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.underwater {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-9%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.underwater:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.sky {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translateX(-50%) translateY(-5%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.sky:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.salsa {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  transform: translateX(-50%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.salsa:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.detective {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-9%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.detective:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.jester {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translateX(-50%) translateY(-5%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.jester:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.knife {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  transform: translateX(-50%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.knife:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.bicycle {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-9%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.bicycle:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+.barbie {
+  font-size: 6vw;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding: 10px;
+  border: 8px solid white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translateX(-50%) translateY(-5%);
+  background-color: black;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.barbie:hover {
+  box-shadow: inset 1000px 0 0 0 white;
+  color: black;
+  outline: none;
+}
+
+p {
+  color: white;
+  font-size: 2vw;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+p[class^="para-"],
+.para-starting,
+.btn-end {
+  display: none;
+}
+
+span {
+  font-style: italic;
+}

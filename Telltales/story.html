@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+  <title>So Random</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <!-- <script>
+    window.onbeforeunload = function () {
+      localStorage.clear();
+    };
+  </script> -->
+</head>
+
+<body style="text-align: center;" onload="typeWriter()">
+  <a class="btn btn-end">
+    <button class="start">BACK TO START</button>
+  </a>
+  <p id="story"></p>
+  <div style="text-align: center;">
+    <img src="" id="image" alt="" width="600px" height="400px">
+  </div>
+  <script>
+    var i = 0;
+    var a = "";
+    if (localStorage.getItem('outfit') == 'detective') {
+      a = "There once was a " + localStorage.getItem('character') + ", when asked where they liked to spend most of their time, their answer would most likely be " + localStorage.getItem('background') + ". The detective’s days were spent doing various things, but one thing they particularly enjoyed, was solving crimes. Investigating and playing a role in upholding the law was something very important to them. There was one crime in particular that still stands out to this day, which remained a mystery to everyone. The main issue in this case was the lack of a murder weapon. That was the missing piece of the puzzle. Many investigators were not able to find or determine what the weapon was, but not our detective! They only needed a few hours until it became very clear what the murder weapon was. A " + localStorage.getItem('item') + "! More particularly a " + localStorage.getItem('item') + " with the culprit’s initials engraved into it, making the task of tracking down the culprit easy. With all the missing pieces now conveniently in front of them, the detective was finally able to make an arrest.Another win for the good guys!";
+    } else if (localStorage.getItem('outfit') == 'jester') {
+      a = "There once was a " + localStorage.getItem('character') + ", when asked where they like to spend most of their time, their answer would most likely be " + localStorage.getItem('background') + ". The jester’s days were spent doing various things, but their favorite thing to do is to entertain! They loved the attention that came with it and the joy they were able to bring to people through stories and acts. One day the jester set out on a mission to find new ways to improve their act. They spent many days racking their brain for any ideas that would help come up with the ‘wow’ factor of the performance, but to no avail. One day, while taking a morning stroll, it came to them. The thing that would undoubtedly be the answer they were looking for, a " + localStorage.getItem('item') + "! There was no second thought about it, and sure enough the next time the jester showed up with their " + localStorage.getItem('item') + " to perform, the crowd loved it! After that, it became a regular occurrence and something that people looked forward to watching.";
+    } else if (localStorage.getItem('outfit') == 'salsa') {
+      a = "There once was a " + localStorage.getItem('character') + ", when asked where they like to spend most of their time, their answer would most likely be " + localStorage.getItem('background') + " .They enjoyed doing a lot of things, but their favorite had to be Latin dancing. Recently, the dancer ran into a bit of trouble, their partner quit on them halfway through practice for their upcoming competition, leaving them with lots of trouble and very little time to come up with a solution.It was a complete disaster! they were stuck spending their days looking for a new dance partner until something finally came up! they remembered their friend, and old partner who, according to social media, was in the same situation as they were. They quickly reached out to them, but the friend lived hours and hours away. The dancer did not have time to wait around all day, so while they were waiting, they decided to use whatever was lying around the house to practice their dance moves… The most convenient option of course, was a " + localStorage.getItem('item') + ". It was only a temporary fix until their partner showed up.";
+    }
+    var speed = 60;
+    function typeWriter() {
+      if (i < a.length) {
+        document.getElementById("story").innerHTML += a.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    ////////////////////////Outer Space///////////////////////////////
+    if (localStorage.getItem('background') == 'space') {
+      ////////////////////////Mermaid///////////////////////////////
+      if (localStorage.getItem('character') == 'mermaid') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceMermaidSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceMermaidSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceMermaidSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceMermaidDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceMermaidDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceMermaidDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceMermaidJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceMermaidJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceMermaidJesterBarbie.jpg";
+          }
+        }
+      }
+      ////////////////////////Alien///////////////////////////////
+      if (localStorage.getItem('character') == 'alien') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceAlienSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceAlienSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceAlienSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceAlienDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceAlienDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceAlienDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceAlienJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceAlienJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceAlienJesterBarbie.jpg";
+          }
+        }
+      }
+      ////////////////////////Bird///////////////////////////////
+      if (localStorage.getItem('character') == 'bird') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceBirdSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceBirdSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceBirdSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceBirdDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceBirdDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceBirdDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SpaceBirdJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SpaceBirdJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SpaceBirdJesterBarbie.jpg";
+          }
+        }
+      }
+    }
+    ////////////////////////Underwater///////////////////////////////
+    else if (localStorage.getItem('background') == 'underwater') {
+      ////////////////////////Mermaid///////////////////////////////
+      if (localStorage.getItem('character') == 'mermaid') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterMermaidSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterMermaidSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterMermaidSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterMermaidDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterMermaidDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterMermaidDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterMermaidJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterMermaidJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterMermaidJesterBarbie.jpg";
+          }
+        }
+      }
+      ////////////////////////Alien///////////////////////////////
+      if (localStorage.getItem('character') == 'alien') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterAlienSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterAlienSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterAlienSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterAlienDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterAlienDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterAlienDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterAlienJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterAlienJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterAlienJesterBarbie.jpg";
+          }
+        }
+      }
+      ////////////////////////Bird///////////////////////////////
+      if (localStorage.getItem('character') == 'bird') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterBirdSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterBirdSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterBirdSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterBirdDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterBirdDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterBirdDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/WaterBirdJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/WaterBirdJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/WaterBirdJesterBarbie.jpg";
+          }
+        }
+      }
+    }
+    ////////////////////////Sky///////////////////////////////
+    else if (localStorage.getItem('background') == 'sky') {
+      ////////////////////////Mermaid///////////////////////////////
+      if (localStorage.getItem('character') == 'mermaid') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyMermaidSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyMermaidSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyMermaidSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyMermaidDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyMermaidDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyMermaidDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyMermaidJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyMermaidJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyMermaidJesterBarbie.jpg";
+          }
+        }
+      }
+      ////////////////////////Alien///////////////////////////////
+      if (localStorage.getItem('character') == 'alien') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyAlienSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyAlienSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyAlienSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyAlienDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyAlienDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyAlienDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyAlienJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyAlienJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyAlienJesterBarbie.jpg";
+          }
+        }
+      }
+      ////////////////////////Bird///////////////////////////////
+      if (localStorage.getItem('character') == 'bird') {
+        //1rd
+        if (localStorage.getItem('outfit') == 'salsa') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyBirdSalsaKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyBirdSalsaBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyBirdSalsaBarbie.jpg";
+          }
+        }
+        //2nd
+        if (localStorage.getItem('outfit') == 'detective') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyBirdDetectiveKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyBirdDetectiveBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyBirdDetectiveBarbie.jpg";
+          }
+        }
+        //3nd
+        if (localStorage.getItem('outfit') == 'jester') {
+          if (localStorage.getItem('item') == 'knife') {
+            document.getElementById("image").src = "imgs/SkyBirdJesterKnife.jpg";
+          }
+          else if (localStorage.getItem('item') == 'bicycle') {
+            document.getElementById("image").src = "imgs/SkyBirdJesterBicycle.jpg";
+          }
+          else if (localStorage.getItem('item') == 'barbie') {
+            document.getElementById("image").src = "imgs/SkyBirdJesterBarbie.jpg";
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brother</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="black-bg"></div>
+    <video class="transition-video" autoplay muted>
+        <source src="assets/videos/new_cassette_transition.mp4" type="video/mp4">
+    </video>
+    <section id="index-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 position-relative px-0">
+                    <div class="overlay"></div>
+                    <div class="after-video-button text-center">
+                        <a href="cassettes.html" class="btn btn-return rounded-0 text-uppercase my-2">Return to
+                            Selection</a>
+                        <br>
+                        <a href="index.html" class="btn btn-return rounded-0 text-uppercase my-2">Return to Beginning</a>
+                    </div>
+                    <div class="position-absolute video-play">
+                        <video id="videoPlayer">
+                            <source src="assets/videos/Brother_cassette.mov" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-img position-absolute">
+                        <img src="assets/images/Cassette.png" class="img-fluid play-pause-img" alt="">
+                        <div id="playerButtons" class="align-items-center d-flex justify-content-around">
+                            <button class="btn-play" id="btnRewind" onclick="forwardRewind(-5)">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+                            <button class="btn-pause" id="btnPlay" onclick="play()">
+                                <i class="fas fa-play pause-icon"></i>
+                            </button>
+                            <button class="btn-farword" id="btnForward" onclick="forwardRewind(5)">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="assets/images/train-cassette.png" class="img-fluid w-100 main-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        function play() {
+            var videoPlayer = document.getElementById("videoPlayer");
+            var btnPlay = document.getElementById("btnPlay");
+            if (videoPlayer.paused) {
+                videoPlayer.play();
+            } else {
+                videoPlayer.pause();
+            }
+        }
+        /*Function to Reload video from Beginning*/
+        function reloadVideo() {
+            var videoPlayer = document.getElementById("videoPlayer");
+            videoPlayer.currentTime = 0;
+        }
+        /*Function to Forward & Rewind*/
+        function forwardRewind(param) {
+            var videoPlayer = document.getElementById("videoPlayer");
+            videoPlayer.currentTime += param;
+        }
+
+        function playVideo() {
+            $('#sample_video').trigger('play');
+        }
+
+        function pauseVideo() {
+            $('#sample_video').trigger('pause');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+body{
+  background: url(../images/background.jpeg);
+  background-size: 100vw 100vh;
+}
+h1{
+  text-align: center;
+  position: relative;
+  top: 35vh;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vw;
+}
+#ticket {
+  position: fixed;
+  width: 15vw;
+  top: 90%;
+  left: 42.5%;
+  margin: 0;
+  display: block;
+}
+#ticket:hover {
+  transform: translateY(-150px);
+  transition: 0.5s;
+  cursor: pointer;
+}

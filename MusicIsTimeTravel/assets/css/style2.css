@@ -1,0 +1,105 @@
+body {
+    background-color: #181818;
+}
+
+#kays {
+    color: #fff;
+    text-align: center;
+}
+
+.mute_audio {
+    background: url(../images/mute.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#alert_msg {
+    color: #fff;
+    text-align: center;
+}
+
+.totalSlides {
+    display: block;
+    text-align: center;
+}
+
+img {
+    margin: auto;
+    width: 60vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.controls {
+    position: fixed;
+    width: 5%;
+}
+
+#playButton {
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    padding: 10px 15px;
+    left: 3%;
+    top: 4%;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#pauseButton {
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    padding: 10px 20px;
+    right: 2%;
+    top: 4%;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+#playButton:hover,#pauseButton:hover {
+    transform: scale(1.2);
+}
+.mySlides {
+    display: none;
+}
+
+.mySlides {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.8s;
+    animation-name: fade;
+    animation-duration: 0.8s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}

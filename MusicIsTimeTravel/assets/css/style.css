@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-cassetes {
+    position: relative;
+}
+
+.main-cassetes .cassetes-container {
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-30%);
+}
+
+.cassetes-container .cassetes img {
+    max-width: 150px;
+}
+
+.main-img {
+    height: 100vh;
+    object-fit: fill;
+}
+
+@keyframes cassetes1 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes cassetes2 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    transition: all 0.2s ease-in-out;
+}
+
+.img-1 {
+    top: 55%;
+    left: 30%;
+    animation: cassetes1 0.9s alternate infinite ease-in;
+}
+
+.img-1:hover {
+    transform: scale(1.4);
+    z-index: 11;
+}
+
+.img-2 {
+    top: 60%;
+    left: 14%;
+    z-index: 10;
+    animation: cassetes2 0.8s alternate infinite ease-in;
+}
+
+.img-2:hover {
+    transform: scale(1.4);
+}
+
+.img-3 {
+    top: 65%;
+    left: 45%;
+    animation: cassetes2 0.9s alternate infinite ease-in;
+}
+
+.img-3:hover {
+    transform: scale(1.5);
+    z-index: 12;
+}
+
+.img-4 {
+    top: 55%;
+    left: 60%;
+    animation: cassetes1 1s alternate infinite ease-in;
+}
+
+.img-4:hover {
+    transform: scale(1.4);
+    z-index: 13;
+}
+
+.after-video-button {
+    z-index: 5;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-65%);
+    display: none;
+}
+
+.overlay {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+.video-play {
+    top: 2%;
+    left: 50%;
+    transform: translateX(-56%);
+    z-index: -2;
+}
+
+#videoPlayer {
+    max-width: 700px;
+}
+
+.video-img {
+    top: 55%;
+    left: 50%;
+    transform: translateX(-56%);
+}
+
+.play-pause-img {
+    max-width: 330px;
+}
+
+#playerButtons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-play {
+    left: 20%;
+    top: 28%;
+    border: none;
+    background: border-box;
+}
+
+.btn-pause {
+    top: 34%;
+    left: 42%;
+    border: none;
+    background: border-box;
+}
+
+.btn-farword {
+    top: 28%;
+    left: 64%;
+    border: none;
+    background: border-box;
+}
+
+.btn-play,
+.pause-icon,
+.btn-farword {
+    font-size: 55px;
+    color: #eee;
+    text-shadow: 0 0 10px rgb(0 0 0 / 60%);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-play:hover,
+.pause-icon:hover,
+.btn-farword:hover {
+    color: #fff;
+    font-size: 58px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.black-bg {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+}
+
+.transition-video {
+    max-width: 100%;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-return {
+    background-color: rgb(113, 96, 64);
+    border-color: rgb(113, 96, 64);
+    color: white !important;
+}
+.btn-return:hover {
+    background-color: rgb(84, 71, 47);
+    border-color: rgb(84, 71, 47);
+}
+
+.btn-return:focus {
+    box-shadow: 0 0 0 0.2rem rgb(113 96 64 / 25%);
+}
+
+@media screen and (min-width: 2000px) {
+    .cassetes-container .cassetes img {
+        max-width: 260px;
+    }
+}
